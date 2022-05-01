@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="content text-left text-capitalize">
+    <h1>Vivero El Otoño</h1>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="card card-planta p-2" >
+        <img src="https://thumbs.dreamstime.com/z/venta-de-pl%C3%A1ntulas-del-vivero-j%C3%B3venes-en-el-centro-jard%C3%ADn-muchos-peque%C3%B1os-%C3%A1rboles-con%C3%ADferas-vegetal-banner-con-solares-y-221615846.jpg" alt="" class="card-img-top img-planta">
+        <div class="card-body">
+          <table class="table">
+            <thead class="thead-dark">
+            <tr class="table-dark">
+              <th scope="col">#</th>
+              <th scope="col">Nombre común</th>
+              <th scope="col">Tipo</th>
+              <th scope="col">Clima</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="planta" *ngFor="let planta of plantas">
+              <th scope="row">{{planta.id}}</th>
+              <td>{{planta.nombre_comun}}</td>
+              <td>{{planta.tipo}}</td>
+              <td>{{planta.clima}}</td>
+            </tr>
+            </tbody>
+          </table>
+          <p class="card-text">
+            <b>Total plantas de interior: {{interiorCount}}</b><br>
+            <b>Total plantas de exterior: {{exteriorCount}}</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="blockquote text-center">Contact us: +57 3102105253 - info@viveroelotonio.com - @viveroelotonio</footer>
+</div>
