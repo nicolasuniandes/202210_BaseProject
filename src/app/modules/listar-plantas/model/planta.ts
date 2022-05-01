@@ -4,7 +4,7 @@ export class Planta {
   nombre_cientifico: string;
   tipo: string;
   altura_maxima: number;
-  clima: number;
+  clima: string;
   sustrato_siembra: string;
   constructor(
     id: number,
@@ -12,7 +12,7 @@ export class Planta {
     nombre_cientifico: string,
     tipo: string,
     altura_maxima: number,
-    clima: number,
+    clima: string,
     sustrato_siembra: string
   ) {
     this.id = id;
